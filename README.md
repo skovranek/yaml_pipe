@@ -7,9 +7,9 @@ You can use YAML\_Pipe as a CLI utility to access and/or search for the key of s
 ## Features
 Usage:
 ```
-$ yaml_pipe [-h/--help] [-q/--quiet] <file> <enumerate, yaml, json, or print>
+$ yaml_pipe [-h/--help] [-q/--quiet]
+<file> <enumerate, yaml, json, or print> <keys...>
 [--search <key>] [--type <int, float, bool, bin, null, or timestamp>]
-<keys...>
 ```
 'yaml\_pipe' takes three positional arguments, and four options. Provides autocomplete and abbreviation.
 - HELP: [-h/--help] Usual help option.
@@ -20,12 +20,16 @@ $ yaml_pipe [-h/--help] [-q/--quiet] <file> <enumerate, yaml, json, or print>
   - YAML: Output YAML data.
   - JSON: Output JSON data.
   - PRINT: Prints YAML with additional annotations for navigability.
+- KEYS: \<keys ...> Optionally provide keys and/or indices as extra args to access nested nodes. Tab for autocomplete to list keys and indices.
 - SEARCH: [--search \<key>] Optionally search for a key. Must match exactly. Default data type is a string.
 - TYPE: [--type \<data\_type>] Optionally select data type of search keys that are not strings. Each choice correlates with a YAML data tag. Must use with search option.
-- KEYS: \<keys ...> Optionally provide keys and/or indices as extra args to access nested nodes. Tab for autocomplete to list keys and indices.
+
+> [!NOTE]
+> To ensure autocomplete with argcomplete works as intended, follow the order of arguments found here: `$ yaml_pipe -q file command keys... --search key --type data\_type`
 
 ## Download/Install
-Run
+1) Clone this repo.
+2) In the local repo directory, run:
 ```
 $ python3 -m pip install -e .
 $ eval "$(register-python-argcomplete3 yaml_pipe)"
