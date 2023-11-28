@@ -27,8 +27,8 @@ $ yaml_pipe [-h/--help] [-q/--quiet] <file> <enumerate, yaml, json, or print>
 ## Download/Install
 Run
 ```
-$ python3 -m pip install yaml_pipe
-$ eval "$(register-python-argcomplete yaml_pipe)"
+$ python3 -m pip install -e .
+$ eval "$(register-python-argcomplete3 yaml_pipe)"
 ```
 ## Implement Library
 There are a few different functions from this project you may want to import.
@@ -75,7 +75,7 @@ def main():
 ```
 
 ## Dependencies
-The main dependencies of YAML\_Pipe are ruamel.yaml to parse YAML and JSON, argparse to parse CLI args, and argcomplete to autocomplete arguments and options.
+The main dependencies of YAML\_Pipe are ruamel.yaml to parse YAML and JSON, argparse to parse CLI args, and [argcomplete](https://pypi.org/project/argcomplete/) to autocomplete arguments and options.
 
 View the requirements.txt file for an exhaustive list of dependencies.
 
