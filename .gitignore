@@ -1,0 +1,5 @@
+venv/
+yaml_pipe/__pycache__/
+YAML_Pipe.egg-info
+data/
+test.txt
