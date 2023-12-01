@@ -23,8 +23,7 @@ def parse() -> Namespace:
         choices=[
             'enumerate',
             'yaml',
-            'json',
-            'print'
+            'json'
         ],
         help='select command for operating on input data',
     )

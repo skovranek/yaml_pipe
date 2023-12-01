@@ -1,5 +1,9 @@
 venv/
+dist/
 yaml_pipe/__pycache__/
+yamlpipe.egg-info/
 YAML_Pipe.egg-info
+
 data/
 test.txt
+yaml_pipe/print_nodes.py

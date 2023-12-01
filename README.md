@@ -8,7 +8,7 @@ You can use YAML\_Pipe as a CLI utility to access and/or search for the key of s
 Usage:
 ```
 $ yaml_pipe [-h/--help] [-q/--quiet]
-<file> <enumerate, yaml, json, or print> <keys...>
+<file> <enumerate, yaml, or json> <keys...>
 [--search <key>] [--type <int, float, bool, bin, null, or timestamp>]
 ```
 'yaml\_pipe' takes three positional arguments, and four options. Provides autocomplete and abbreviation.
@@ -16,24 +16,32 @@ $ yaml_pipe [-h/--help] [-q/--quiet]
 - QUIET: [-q/--quiet] Option to turn off success messages printed to stderr.
 - FILE: [file] Must include path to data file to parse as YAML (JSON is a subset of YAML).
 - COMMAND: \<enumerate, yaml, or json> Must select one of three commands:
-  - ENUMERATE: List only the nodes at the current level, no nesting.
+  - ENUMERATE: Print the nodes at the current level, no nesting. Index list items.
   - YAML: Output YAML data.
   - JSON: Output JSON data.
-  - PRINT: Prints YAML with additional annotations for navigability.
 - KEYS: \<keys ...> Optionally provide keys and/or indices as extra args to access nested nodes. Tab for autocomplete to list keys and indices.
 - SEARCH: [--search \<key>] Optionally search for a key. Must match exactly. Default data type is a string.
-- TYPE: [--type \<data\_type>] Optionally select data type of search keys that are not strings. Each choice correlates with a YAML data tag. Must use with search option.
+- TYPE: [--type \<data\_type>] Optionally select the data type of search keys that are not strings. Each choice correlates with a YAML data tag. Is an option for the search option.
 
 > [!NOTE]
-> To ensure autocomplete with argcomplete works as intended, follow the order of arguments found here: `$ yaml_pipe -q file command keys... --search key --type data\_type`
+> To ensure autocomplete with argcomplete works as intended, follow the order of arguments found here:
+> `$ yaml_pipe -q file command keys... --search key --type data_type`
 
 ## Download/Install
-1) Clone this repo.
-2) In the local repo directory, run:
+From source:
+1) Clone the repo:
+```
+$ git clone https://github.com/skovranek/yaml_pipe
+```
+2) Change directories to the new 'yaml\_pipe directory/', then run:
 ```
 $ python3 -m pip install -e .
 $ eval "$(register-python-argcomplete3 yaml_pipe)"
 ```
+
+> [!NOTE]
+> YAML\_Pipe is not published on Pypi.com. Trying to install with pip will install a different package with a similar name.
+
 ## Implement Library
 There are a few different functions from this project you may want to import.
 > access\_keys(node: Any, keys: List[str]) -> Any, bool:

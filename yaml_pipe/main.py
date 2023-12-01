@@ -1,10 +1,9 @@
 #!/usr/bin/env python
 # PYTHON_ARGCOMPLETE_OK
-from json import dumps as json_dump
 from sys import stderr
 
 from .print_keys import print_keys
-from .print_nodes import print_nodes
+from .json_dump import json_dump
 from .parse_cli_args import parse
 from .load_yaml import load, dump
 from .access_keys import access_keys
@@ -15,8 +14,7 @@ from .key_search import key_search
 COMMANDS = {
     'enumerate': print_keys,
     'yaml': dump,
-    'json': json_dump,
-    'print': print_nodes
+    'json': json_dump
 }
 
 
