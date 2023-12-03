@@ -22,7 +22,7 @@ $ yaml_pipe [-h/--help] [-q/--quiet]
 - KEYS: \<keys ...> Optionally provide keys and/or indices as extra args to access nested nodes. Tab for autocomplete to list keys and indices.
 - SEARCH: [--search \<key>] Optionally search for a key. Must match exactly. Default data type is a string.
 - TYPE: [--type \<data\_type>] Optionally select the data type of search keys that are not strings. Each choice correlates with a YAML data tag. Is an option for the search option.
-
+![gif demonstrating autocomplete](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3kwOXVxbTlhZjcyOHl6czk5dzFzbzhudHgyejFld2o3bzYwNnJkdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7Skla52RfNo837pfvN/giphy.gif)
 > [!NOTE]
 > To ensure autocomplete with argcomplete works as intended, follow the order of arguments found here:
 > `$ yaml_pipe -q file command keys... --search key --type data_type`

@@ -7,3 +7,4 @@ YAML_Pipe.egg-info
 data/
 test.txt
 yaml_pipe/print_nodes.py
+.DS_Store

@@ -15,7 +15,7 @@ setup(
     license='GPL-3.0',
     classifiers=[
         'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: GNU General Public License v3',
+        'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
         'Operating System :: OS Independent',
     ],
     keywords='yaml json utility extract autocomplete',
@@ -29,6 +29,6 @@ setup(
     ],
     python_requires='>=3.12.0',
     entry_points={
-        'console_scripts': ['yaml_pipe=yaml_pipe.main:main']
+        'console_scripts': ['yamlpipe=yaml_pipe.main:main']
     }
 )
