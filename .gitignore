@@ -1,10 +1,9 @@
+.DS_Store
+yaml_pipe/__pycache__/
 venv/
 dist/
-yaml_pipe/__pycache__/
-yamlpipe.egg-info/
-YAML_Pipe.egg-info
-
+pipeyaml.egg-info/
 data/
 test.txt
 yaml_pipe/print_nodes.py
-.DS_Store
+README_PyPI.md

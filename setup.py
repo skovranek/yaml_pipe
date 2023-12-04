@@ -4,7 +4,7 @@ with open("README.md", "r") as f:
     long_description = f.read()
 
 setup(
-    name='yamlpipe',
+    name='pipeyaml',
     version='0.1.0',
     description='Access YAML data in the CLI.',
     long_description=long_description,
@@ -29,6 +29,6 @@ setup(
     ],
     python_requires='>=3.12.0',
     entry_points={
-        'console_scripts': ['yamlpipe=yaml_pipe.main:main']
+        'console_scripts': ['yaml_pipe=yaml_pipe.main:main']
     }
 )
