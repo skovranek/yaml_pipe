@@ -7,7 +7,7 @@ PyPI: [pipeyaml](https://pypi.org/project/pipeyaml/)
 You can use YAML Pipe as a CLI utility to access and/or search for the key of specific data nodes in a YAML or JSON file. This may help with data processing by not requiring you to, first, manually open and literally read the data file, then then write code in your program to access certain keys to extract the data, and then run your program. YAML Pipe let's you grab the data, and then pipe it as input to another CLI tool or write it to a new file. It does not modify the original file.
 
 ## Features
-![gif demonstrating autocomplete](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGh0dm14bzN3NjQ2cWJuODEwd2Z4bGUzMmtndG1vOGZveWVwdDFtNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dyf3SKTNGu21ronqA8/giphy.gif)
+![gif demonstrating autocomplete](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDg4MGZvc2Q2cHlhMzgwa2w5M2d2aTB2NGhjdzN0N3ozcnJvdWVsYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3Cr2pmLEYblDojgqlg/giphy.gif)
 
 Usage:
 ```
