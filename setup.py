@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setup(
     name='pipeyaml',
-    version='0.1.0',
+    version='0.1.1',
     description='Access YAML data in the CLI.',
     long_description=long_description,
     long_description_content_type="text/markdown",

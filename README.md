@@ -1,11 +1,13 @@
-# YAML\_Pipe (PyPI: pipeyaml)
+# YAML Pipe 
 CLI utility for extracting YAML or JSON data.
 
+PyPI: [pipeyaml](https://pypi.org/project/pipeyaml/)
+
 ## Overview
-You can use YAML\_Pipe as a CLI utility to access and/or search for the key of specific data nodes in a YAML or JSON file. This may help with data processing by not requiring you to, first, manually open and literally read the data file, then then write code in your program to access certain keys to extract the data, and then run your program. YAML\_Pipe let's you grab the data, and then pipe it as input to another CLI tool or write it to a new file. It does not modify the original file.
+You can use YAML Pipe as a CLI utility to access and/or search for the key of specific data nodes in a YAML or JSON file. This may help with data processing by not requiring you to, first, manually open and literally read the data file, then then write code in your program to access certain keys to extract the data, and then run your program. YAML Pipe let's you grab the data, and then pipe it as input to another CLI tool or write it to a new file. It does not modify the original file.
 
 ## Features
-![gif demonstrating autocomplete](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3kwOXVxbTlhZjcyOHl6czk5dzFzbzhudHgyejFld2o3bzYwNnJkdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7Skla52RfNo837pfvN/giphy.gif)
+![gif demonstrating autocomplete](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGh0dm14bzN3NjQ2cWJuODEwd2Z4bGUzMmtndG1vOGZveWVwdDFtNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dyf3SKTNGu21ronqA8/giphy.gif)
 
 Usage:
 ```
@@ -34,27 +36,28 @@ From source:
 ```
 $ git clone https://github.com/skovranek/yaml_pipe
 ```
-2) Change directories to the new 'yaml\_pipe directory/', then run:
+2) Change directories to the new 'yaml\_pipe' directory, then run:
 ```
 $ python3 -m pip install -e .
-$ eval "$(register-python-argcomplete3 yaml_pipe)"
+$ eval "$(register-python-argcomplete yaml_pipe)"
 ```
 From PyPI:
 ```
 $ pip install pipeyaml
+$ eval "$(register-python-argcomplete yaml_pipe)"
 ```
 > [!NOTE]
 > YAML\_Pipe is published on PyPI as 'pipeyaml', not 'yaml\_pipe' or 'yamlpipe'.
 
 ## Implement Library
-There are a few different functions from this project you may want to import.
+There are a few functions from this project you may find useful to import for your own project.
 > access\_keys(node: Any, keys: List[str]) -> Any, bool:
 
 Attempt to access value in a series of nested dicts and lists via list of keys and indices as strings. True/False for exists/not exists.
 
 > key\_search(node: Any, key: str) -> Any, List[Any], bool:
 
-Attempt to find dict key in series of nested dicts and lists. Returned list is path of keys or indices to access value. True/False for found/not found.
+Attempt to find a specified dict key in series of nested dicts and lists. Returned list is path of keys or indices to access value. True/False for found/not found.
 
 > print\_keys(node: Any):
 
@@ -62,7 +65,7 @@ Prints the first layer of nodes. Keys are listed. Sequences are indexed. Nested 
 
 View the [main](hhhttps://github.com/skovranek/yaml_pipe/blob/main/requirements.txt) function of Yaml\_Pip for an example of how these functions are used.
 ## Dependencies
-The main dependencies of YAML\_Pipe are [ruamel.yaml](https://pypi.org/project/ruamel.yaml/) to parse YAML and JSON, [argparse](https://docs.python.org/3/library/argparse.html) to parse CLI args, and [argcomplete](https://pypi.org/project/argcomplete/) to autocomplete arguments and options.
+The main dependencies of YAML Pipe are [ruamel.yaml](https://pypi.org/project/ruamel.yaml/) to parse YAML and JSON, [argparse](https://docs.python.org/3/library/argparse.html) to parse CLI args, and [argcomplete](https://pypi.org/project/argcomplete/) to autocomplete arguments and options.
 
 View the [requirements.txt](https://github.com/skovranek/yaml_pipe/blob/main/requirements.txt) file for the entire list of dependencies.
 
