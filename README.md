@@ -57,7 +57,7 @@ Attempt to access value in a series of nested dicts and lists via list of keys a
 
 > key\_search(node: Any, key: str) -> Any, List[Any], bool:
 
-Attempt to find a specified dict key in series of nested dicts and lists. Returned list is path of keys or indices to access value. True/False for found/not found.
+Attempt to find a specified dict key in a series of nested dicts and lists. Returned list is path of keys or indices to access value. True/False for found/not found.
 
 > print\_keys(node: Any):
 
