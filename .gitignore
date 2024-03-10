@@ -1,4 +1,4 @@
-.DS_Store
+**/.DS_Store
 yaml_pipe/__pycache__/
 venv/
 dist/
